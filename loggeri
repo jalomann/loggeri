@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ ! -d /home/nemo/Documents/loggeri ]]
+then
+mkdir -p /home/nemo/Documents/loggeri
+fi
+
+lgdate=`date +"%Y%m%d"`
+
+printf "=========================\n"
+printf ">>"
+read input1col
+
+echo $exactt $input1col
+echo $exactt $input1col  >> /home/nemo/Documents/loggeri/loki"$lgdate".txt
+
+exit 0
